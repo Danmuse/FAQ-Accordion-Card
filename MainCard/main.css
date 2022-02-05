@@ -61,11 +61,37 @@ body {
   display: none;
 }
 
+.illustrationMobile {
+  display: none;
+}
+
 @media screen and (min-width: 1220px) {
   .boxIllustration {
     display: block;
     position: absolute;
     transform: translate(-155%, 20%);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .mainCard {
+    display: block;
+  }
+  .illustration {
+    display: none;
+  }
+  .illustrationMobile {
+    height: 6.5rem;
+    background-image: url(../images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    text-align: center;
+  }
+  .womanIllustrationMobile {
+    width: 50%;
+    position: absolute;
+    transform: translate(-50%, -60%);
   }
 }
 
@@ -80,6 +106,15 @@ body {
   font-weight: 700;
   margin-top: 0;
   color: var(--VeryDarkBlue);
+}
+
+@media screen and (max-width: 720px) {
+  .FAQ {
+    padding: 2.5rem 2rem;
+  }
+  .title {
+    text-align: center;
+  }
 }
 
 hr {
@@ -110,6 +145,12 @@ hr {
 .questionContainer img {
   margin: 0 1.5rem;
   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 620px) {
+  .questionContainer img {
+    margin: 0 0.7rem;
+  }
 }
 
 .query.active .question {
